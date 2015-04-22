@@ -1,0 +1,14 @@
+{# PortfolioBundle/Resources/views/Portfolio/common/base.html.twig #}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Portfolio{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('bundles/peshportfolio/css/style.css') }}" />
+        <link rel="shortcut icon" href="{{ asset('bundles/peshportfolio/images/favicon.ico') }}" />
+    </head>
+    <body>
+    	{{ include('PeshPortfolioBundle:Portfolio:common/menu.html.twig') }}
+        {% block body %}{% endblock %}
+    </body>
+</html>
