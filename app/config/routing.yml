@@ -1,6 +1,6 @@
 pesh_portfolio:
     resource: "@PeshPortfolioBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /portfolio
 
 app:
     resource: "@AppBundle/Controller/"
