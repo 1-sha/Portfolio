@@ -1,0 +1,3 @@
+pesh_portfolio_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PeshPortfolioBundle:Default:index }

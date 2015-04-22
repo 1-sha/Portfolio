@@ -1,0 +1,4 @@
+services:
+#    pesh_portfolio.example:
+#        class: Pesh\PortfolioBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
