@@ -1,11 +1,19 @@
 {# PortfolioBundle/Resources/views/Portfolio/common/menu.html.twig #}
 
-<ul>
-	<li><a href="{{ path('pesh_portfolio_index') }}">Index</a></li>
-	<li><a href="{{ path('pesh_portfolio_about') }}">About</a></li>
-	<li><a href="{{ path('pesh_portfolio_cv') }}">CV</a></li>
-	<li><a href="{{ path('pesh_portfolio_veille') }}">Veille</a></li>
-	<li><a href="{{ path('pesh_portfolio_contact') }}">Contact</a></li>
-</ul>
-
-<hr/>
+<div class="nav">
+	<div class="logo">
+	    <a href="#">
+	        <img alt="logo" src="{{ asset('bundles/peshportfolio/images/logo.png') }}" width="32" height="32">
+	    </a>
+	    <span>Yolan Behlouli - Portfolio</span>
+	</div>
+	<div class="links">
+	    <ul>
+	        <li><a href="{{ path('pesh_portfolio_index') }}">Index</a></li>
+	        <li><a href="{{ path('pesh_portfolio_about') }}">Travaux</a></li>
+	        <li><a href="{{ path('pesh_portfolio_cv') }}">CV</a></li>
+	        <li><a href="{{ path('pesh_portfolio_veille') }}">Veille</a></li>
+	        <li><a href="{{ path('pesh_portfolio_contact') }}">Contact</a></li>
+	    </ul>
+	</div>
+</div>
