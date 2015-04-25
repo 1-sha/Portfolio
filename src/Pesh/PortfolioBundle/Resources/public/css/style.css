@@ -2,12 +2,13 @@ body {
     background-color: #E6E6E6;
 }
 
-h1 {
-    color: red;
+strong {
+    color: #E66E00;
+    font-size: 18px;
 }
 
 .nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -68,4 +69,79 @@ h1 {
 
 .content {
     margin-top: 76px;
+    padding: 20px;
+}
+
+.content td {
+    vertical-align: baseline;
+}
+
+.article {
+    min-height: 300px;
+    min-width: 20%;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: #393939;
+    border-radius: 10px;
+}
+
+.article .title {
+    font-size: 25px;
+    font-family: Impact;
+    padding-top: 5px;
+    padding-left: 20px;
+    color: #E66E00;
+}
+
+.article .title a {
+    text-decoration: none;
+}
+
+.article .body {
+    color: #E6E6E6;
+    font-family: Verdana;
+    margin: 10px;
+    text-align: justify;
+}
+
+.article .body img {
+    margin-left: 10px;
+    float: right;
+    border: 2px solid #E66E00
+}
+
+.article a {
+    color: #E66E00;
+}
+
+.article a:hover {
+    color: #E6E6E6;
+}
+
+.article .body li p {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.article .body dt {
+    margin-top: 5px;
+    color: #E66E00;
+}
+
+.moi {
+    width: 70vw;
+}
+
+.formation {
+    width: 45%;
+    float: left;
+}
+
+.skills {
+    width: 45%;
+    float: right;
+}
+
+.rss {
+
 }

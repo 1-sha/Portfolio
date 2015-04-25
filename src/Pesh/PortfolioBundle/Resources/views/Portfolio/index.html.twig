@@ -7,5 +7,69 @@
 {% endblock %}
 
 {% block body %}
-	<h1>index</h1>
+	<table><tr><td>
+        <div class="article moi">
+            <div class="title">À propos de moi</div>
+            <hr/>
+            <div class="body">
+                <img alt="photo" src="{{ asset('bundles/peshportfolio/images/photo.jpg') }}" width="128">
+                <p>Je suis étudiant en BTS informatique <strong>Services Informatiques aux Organisation</strong> spécialité <strong>Solutions Logicielles et Applications Métiers</strong>.</p>
+                <p>Ce portfolio a été mis en place pour vous présenter mes travaux réalisés en formation, mon parcours d'apprentisage et mes compétences.</p>
+                <p>Il a été développé par moi-même grâce au framework PHP <a href="http://symfony.com/">Symfony 2</a>, le language PHP, HTML5 et CSS3. Vous pouvez accèdez aux sources librement sur <a href="https://github.com/Peshmelba/Portfolio">mon repo GitHub</a>.</p>
+            </div>
+        </div>
+
+        <div class="article formation">
+            <div class="title"><a href="{{ path('pesh_portfolio_travaux') }}">Travaux</a></div>
+            <hr/>
+            <div class="body">
+                <ul>
+                    <li><strong><a href="{{ path('pesh_portfolio_travaux') }}#s1">Stage 1ère année</a></strong><p><a href="http://www.silk-info.com/">Silk Informatique</a>. Développement d'un module graphique SVG pour le logiciel 4D.</p></li>
+                    <li><strong><a href="{{ path('pesh_portfolio_travaux') }}#s2">Stage 2nd année</a></strong><p><a href="http://lespolypodes.com/">Les Polypodes</a>. ODE, prototypage d'un service de partage d'évênements.</p></li>
+                    <li><strong><a href="{{ path('pesh_portfolio_travaux') }}#gsb">PPE GSB</a></strong><p>La société Galaxy-Suiss Bourdin a besoin d'une application de suivie de ses visiteurs médicaux.</p></li>
+                    <li><strong><a href="{{ path('pesh_portfolio_travaux') }}#visadom">PPE Visadom</a></strong><p></p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="article skills">
+            <div class="title"><a href="{{ path('pesh_portfolio_cv') }}">Compétences</a></div>
+            <hr/>
+            <div class="body">
+                <dl>
+                	<dt>Langages</dt>
+                	<dd>- C, C#</dd>
+                	<dd>- Java</dd>
+                	<dd>- Python 3</dd>
+                	<dd>- HTML 5, CCS 3</dd>
+                	<dd>- JavaScript</dd>
+                	<dd>- SQL, Transact SQL, LINQ To SQL</dd>
+                	<dd>- PHP 5</dd>
+                	<dt>Frameworks</dt>
+                	<dd>- Code::Blocks</dd>
+                	<dd>- Symfony 2</dd>
+                	<dd>- Eclipse, Android SDK</dd>
+                	<dd>- Visual Studio, Entity Framework, .Net 4.5</dd>
+                	<dd>- 4D</dd>
+                	<dd>- Extension Google Chrome</dd>
+                	<dt>Servers</dt>
+                	<dd>- Apache 2.4</dd>
+                	<dd>- SQL Server</dd>
+                	<dt>Modélisation</dt>
+                	<dd>- WinDesign</dd>
+                	<dt>Gestion de projet</dt>
+                	<dd>- Gantt</dd>
+                	<dd>- Redmine</dd>
+                	<dd>- Git</dd>
+                </dl>
+            </div>
+        </div>
+    </td><td>
+        <div class="article rss">
+            <div class="title"><a href="{{ path('pesh_portfolio_veille') }}">RSS</a></div>
+            <hr/>
+            <div class="body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a felis lacus. Aliquam arcu dolor, dignissim eu lectus ut, dapibus mollis metus. Nullam lectus justo, convallis id urna in, imperdiet consectetur nulla. Donec porttitor pellentesque finibus. Phasellus tincidunt purus nisi, in suscipit arcu dignissim a. Quisque eget maximus nulla, ac congue neque. Aenean vel turpis sed leo feugiat vestibulum vitae in tortor. Donec eu interdum urna. Sed lorem dui, viverra at sollicitudin id, convallis id quam. Vivamus commodo quam vitae luctus sodales. Nunc ac vehicula enim. Fusce dolor dolor, scelerisque ac augue lobortis, semper dictum quam. Vivamus vel porta ante. Nunc semper, augue sit amet auctor efficitur, orci diam consectetur risus, ut sodales massa nunc in ante. Aenean vitae nibh vel purus molestie pellentesque eu eget risus.
+            </div>
+        </div>
+    </td></tr></table>
 {% endblock %}
