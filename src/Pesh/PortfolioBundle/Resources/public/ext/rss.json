@@ -1,0 +1,41 @@
+{
+    "feeds":[
+    {
+      "title" : "PacketStorm cryptography",
+      "src" : "http://rss.packetstormsecurity.com/news/tags/cryptography/",
+      "tags" : ["crypto"]
+    },{
+      "title" : "New-York Times cryptography",
+      "src" : "http://topics.nytimes.com/top/reference/timestopics/subjects/c/cryptography/index.html?rss=1",
+      "tags" : ["crypto"]
+    },{
+      "title" : "MIT cryptography",
+      "src" : "http://newsoffice.mit.edu/rss/topic/cryptography",
+      "tags" : ["crypto"]
+    },{
+      "title" : "Security Magasin",
+      "src" : "http://www.securitymagazine.com/rss/15",
+      "tags" : ["security"]
+    },{
+      "title" : "IT Security",
+      "src" : "http://www.itsecurity.com/feeds/feed.xml",
+      "tags" : ["security"]
+    },{
+      "title" : "Cisco Threat Outbreak Alerts",
+      "src" : "http://tools.cisco.com/security/center/threatOutbreak_20.xml",
+      "tags" : ["security"]
+    },{
+      "title" : "Korben",
+      "src" : "http://korben.info/feed",
+      "tags" : ["news", "it"]
+    },{
+      "title" : "Le Monde Informatique - Sécurité",
+      "src" : "http://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml",
+      "tags" : ["news", "security"]
+    },{
+      "title" : "Le Monde Informatique - Logiciels",
+      "src" : "http://www.lemondeinformatique.fr/flux-rss/thematique/logiciel/rss.xml",
+      "tags" : ["news", "software"]
+    }
+    ]
+}
