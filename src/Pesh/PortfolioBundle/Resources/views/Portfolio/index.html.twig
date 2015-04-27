@@ -6,8 +6,9 @@
 	Portfolio
 {% endblock %}
 
+
 {% block body %}
-	<table><tr><td>
+    <table><tr><td class="left-column">
         <div class="article moi">
             <div class="title">À propos de moi</div>
             <hr/>
@@ -36,30 +37,30 @@
             <hr/>
             <div class="body">
                 <dl>
-                	<dt>Langages</dt>
-                	<dd>- C, C#</dd>
-                	<dd>- Java</dd>
-                	<dd>- Python 3</dd>
-                	<dd>- HTML 5, CCS 3</dd>
-                	<dd>- JavaScript</dd>
-                	<dd>- SQL, Transact SQL, LINQ To SQL</dd>
-                	<dd>- PHP 5</dd>
-                	<dt>Frameworks</dt>
-                	<dd>- Code::Blocks</dd>
-                	<dd>- Symfony 2</dd>
-                	<dd>- Eclipse, Android SDK</dd>
-                	<dd>- Visual Studio, Entity Framework, .Net 4.5</dd>
-                	<dd>- 4D</dd>
-                	<dd>- Extension Google Chrome</dd>
-                	<dt>Servers</dt>
-                	<dd>- Apache 2.4</dd>
-                	<dd>- SQL Server</dd>
-                	<dt>Modélisation</dt>
-                	<dd>- WinDesign</dd>
-                	<dt>Gestion de projet</dt>
-                	<dd>- Gantt</dd>
-                	<dd>- Redmine</dd>
-                	<dd>- Git</dd>
+                    <dt>Langages</dt>
+                    <dd>- C, C#</dd>
+                    <dd>- Java</dd>
+                    <dd>- Python 3</dd>
+                    <dd>- HTML 5, CCS 3</dd>
+                    <dd>- JavaScript</dd>
+                    <dd>- SQL, Transact SQL, LINQ To SQL</dd>
+                    <dd>- PHP 5</dd>
+                    <dt>Frameworks</dt>
+                    <dd>- Code::Blocks</dd>
+                    <dd>- Symfony 2</dd>
+                    <dd>- Eclipse, Android SDK</dd>
+                    <dd>- Visual Studio, Entity Framework, .Net 4.5</dd>
+                    <dd>- 4D</dd>
+                    <dd>- Extension Google Chrome</dd>
+                    <dt>Servers</dt>
+                    <dd>- Apache 2.4</dd>
+                    <dd>- SQL Server</dd>
+                    <dt>Modélisation</dt>
+                    <dd>- WinDesign</dd>
+                    <dt>Gestion de projet</dt>
+                    <dd>- Gantt</dd>
+                    <dd>- Redmine</dd>
+                    <dd>- Git</dd>
                 </dl>
             </div>
         </div>
@@ -67,9 +68,16 @@
         <div class="article rss">
             <div class="title"><a href="{{ path('pesh_portfolio_veille') }}">RSS</a></div>
             <hr/>
-            <div class="body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc a felis lacus. Aliquam arcu dolor, dignissim eu lectus ut, dapibus mollis metus. Nullam lectus justo, convallis id urna in, imperdiet consectetur nulla. Donec porttitor pellentesque finibus. Phasellus tincidunt purus nisi, in suscipit arcu dignissim a. Quisque eget maximus nulla, ac congue neque. Aenean vel turpis sed leo feugiat vestibulum vitae in tortor. Donec eu interdum urna. Sed lorem dui, viverra at sollicitudin id, convallis id quam. Vivamus commodo quam vitae luctus sodales. Nunc ac vehicula enim. Fusce dolor dolor, scelerisque ac augue lobortis, semper dictum quam. Vivamus vel porta ante. Nunc semper, augue sit amet auctor efficitur, orci diam consectetur risus, ut sodales massa nunc in ante. Aenean vitae nibh vel purus molestie pellentesque eu eget risus.
+            <div class="body" id="rss-viewer">
             </div>
         </div>
     </td></tr></table>
+{% endblock %}
+
+
+{% block script %}
+    <script type="text/javascript">
+    var localrss = "{{ asset('bundles/peshportfolio/ext/rss.json') }}";
+    var ajaxproxy = "{{ path('pesh_portfolio_ajaxproxy') }}/";</script>
+    <script type="text/javascript" src="{{ asset('bundles/peshportfolio/js/rssreader.js') }}"></script>
 {% endblock %}

@@ -17,3 +17,7 @@ pesh_portfolio_veille:
 pesh_portfolio_contact:
     path:     /contact
     defaults: { _controller: PeshPortfolioBundle:Portfolio:contact }
+
+pesh_portfolio_ajaxproxy:
+    path:     /ajaxproxy/{url}
+    defaults: { _controller: PeshPortfolioBundle:Portfolio:ajaxproxy, url: null}

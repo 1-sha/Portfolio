@@ -72,13 +72,17 @@ strong {
     padding: 20px;
 }
 
+.content .left-column {
+    width: 70%;
+}
+
 .content td {
     vertical-align: baseline;
 }
 
 .article {
     min-height: 300px;
-    min-width: 20%;
+    min-width: 150px;
     border: 2px solid black;
     margin: 10px;
     background-color: #393939;
@@ -129,7 +133,7 @@ strong {
 }
 
 .moi {
-    width: 70vw;
+    width: auto;
 }
 
 .formation {
