@@ -36,6 +36,22 @@
       "title" : "Le Monde Informatique - Logiciels",
       "src" : "http://www.lemondeinformatique.fr/flux-rss/thematique/logiciel/rss.xml",
       "tags" : ["news", "software"]
+    },{
+      "title" : "Panda Security",
+      "src" : "http://www.pandasecurity.com/mediacenter/feed/",
+      "tags" : ["news", "security"]
+    },{
+      "title" : "Avast blog",
+      "src" : "https://blog.avast.com/feed/",
+      "tags" : ["news", "security", "virus"]
+    },{
+      "title" : "Symantec last risk, Norton blog",
+      "src" : "http://www.symantec.com/xml/rss/listings.jsp?lid=mixedsecurityrisks",
+      "tags" : ["news", "security", "virus"]
+    },{
+      "title" : "Symantec last threats, Norton blog",
+      "src" : "http://www.symantec.com/xml/rss/listings.jsp?lid=latestthreats30days",
+      "tags" : ["news", "security", "virus"]
     }
     ]
 }

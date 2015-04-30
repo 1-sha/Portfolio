@@ -44,15 +44,16 @@ function loadFeeds()
 			dataType : "xml",
 			success : function(feed) {
 				items.push.apply(items, $(feed).find("item"));
+			}
 
-				count++;
+		}).complete(function() {
+			count++;
 
-				if (count == localFeeds.length){
-					sortByDate(false);
+			if (count == localFeeds.length){
+				sortByDate(false);
 
-					for (var j = 0; j < 180; j++){
-						printItem(items[j]);
-					}
+				for (var j = 0; j < 6; j++){
+					printItem(items[j]);
 				}
 			}
 		});
