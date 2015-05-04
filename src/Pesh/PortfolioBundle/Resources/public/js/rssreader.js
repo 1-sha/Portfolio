@@ -51,8 +51,8 @@ function loadFeeds()
 
 			if (count == localFeeds.length){
 				sortByDate(false);
-
-				for (var j = 0; j < 6; j++){
+				
+				for (var j = 0; j < items.length; j++){
 					printItem(items[j]);
 				}
 			}
@@ -76,16 +76,23 @@ function sortByDate(distinct)
 
 function compare(a,b)
 {
+	if (getDate(a) == "Invalid Date")
+		return 1;
 	if (getDate(a) < getDate(b))
 		return 1;
-	if (getDate(a) > getDate(b))
+	else
 		return -1;
-	return 0;
 }
 
 function getDate(item)
 {
-	return new Date($(item).find('pubDate').text());
+	var date;
+	date = new Date($(item).find('pubDate').text());
+	
+	if (date == "Invalid Date")
+		date = new Date($(item).find('date').text());
+		
+	return date;
 }
 
 function printItem(item)
@@ -103,7 +110,11 @@ function printItem(item)
 
 	pItemDate = document.createElement('p');
 	pItemDate.className = "item-date";
-	pItemDate.innerHTML = (new Date($(item).find('pubDate').text())).toLocaleString();
+	var date;
+	date = new Date($(item).find('pubDate').text());
+	if (date == "Invalid Date")
+		date = new Date($(item).find('date').text());
+	pItemDate.innerHTML = date.toLocaleString();
 
 	pItemDescription = document.createElement('p');
 	pItemDescription.className = "item-description";
