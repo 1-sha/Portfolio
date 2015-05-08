@@ -1,0 +1,94 @@
+.content {
+    margin-top: 66px;
+    padding: 0px;
+    height: calc(100% - 66px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.block-1, .block-2 {
+    min-height: 100%;
+    color: #E6E6E6;
+    font-family: Verdana;
+}
+
+.block-1 {
+    background-color: #595959;
+}
+
+.block-2 {
+    background-color: #393939;
+}
+
+.body {
+    padding: 20px;
+}
+
+.title {
+    margin-left: 20%;
+}
+
+.title a {
+    color: #E66E00;
+    text-decoration: none;
+}
+
+.title a:before {
+    display: block;
+    content: " ";
+    margin-top: -111px;
+    height: 111px;
+    visibility: hidden;
+}
+
+.description a {
+    color: #E66E00;
+}
+
+.description a:hover {
+    color: #E6E6E6;
+}
+
+.description h1, .description h4 {
+    clear: both;
+    color: #E66E00;
+}
+
+.description p {
+    margin-left: 40px;
+    text-align: justify;
+}
+
+#siLogo {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+#lpLogo {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+#gsbLogo {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+#visadomLogo {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 100px;
+}

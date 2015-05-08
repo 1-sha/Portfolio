@@ -4,7 +4,7 @@ pesh_portfolio_index:
 
 pesh_portfolio_travaux:
     path:     /travaux
-    defaults: { _controller: PeshPortfolioBundle:Portfolio:about }
+    defaults: { _controller: PeshPortfolioBundle:Portfolio:travaux }
 
 pesh_portfolio_cv:
     path:     /cv

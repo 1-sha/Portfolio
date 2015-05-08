@@ -12,9 +12,9 @@ class PortfolioController extends Controller
         return $this->render('PeshPortfolioBundle:Portfolio:index.html.twig', array());
     }
 
-    public function aboutAction()
+    public function travauxAction()
     {
-        return $this->render('PeshPortfolioBundle:Portfolio:about.html.twig', array());
+        return $this->render('PeshPortfolioBundle:Portfolio:travaux.html.twig', array());
     }
 
     public function cvAction()

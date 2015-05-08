@@ -1,0 +1,139 @@
+{# PortfolioBundle/Resources/views/Portfolio/about.html.twig #}
+{% extends 'PeshPortfolioBundle:Portfolio:common/base.html.twig' %}
+
+
+{% block title %}
+	Travaux
+{% endblock %}
+
+
+{% block style %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('bundles/peshportfolio/css/style-travaux.css') }}" />
+{% endblock %}
+
+
+{% block body %}
+	<div class="block-1">
+        <div class="body">
+            <h1 class="title"><a name ="s1" href="#s1">Stage 1ère année</a></h1>
+            <div class="description">
+            	<img id="siLogo" src="{{ asset('bundles/peshportfolio/images/si-logo.png') }}" alt="Silk-Info">
+                <p><a href="http://www.silk-info.com/">Silk Informatique</a>. Développement d'un module graphique SVG pour le logiciel 4D.</p><hr>
+                <h4>Contexte</h4>
+                <p class="context">Silk Informatique est une PME spécialisée dans le développement de logiciels de gestion médicale (gamme <a href="http://www.silk-info.com/eo-medecin.html">Eo</a>). Leurs logiciels sont développés grâce à l'éditeur <a href="http://www.4d.com/fr/">4D</a>. Ils utilisent sur une version obsolète de 4D un module complémentaire permettant de créer facilement des graphiques et des schémas. La mission du stage consistait à développer un outil similaire sur la version la plus récente de 4D grâce à l'outil de création d'images SVG.</p>
+                <h4>Objectifs</h4>
+                <p class="goal"><ul>
+                    <li>Autoformation d'une semaine sur 4D grâce à la documentation et les tutoriels en ligne.</li>
+                    <li>Réaliser sur 4Dv14 un outil similaire au module Chart de 4Dv13.5 en SVG.</li>
+                    <li>Développer un outil de conversion des graphiques du module Chart au format SVG et les importer sur 4Dv14.</li>
+                </ul></p>
+                <h4>Méthode de travail</h4>
+                <p class="method">Après la periode d'autoformation j'ai commencé le développement de l'application seul, en m'aidant de ressources en ligne et en demandant de l'aide au besoin. L'application n'a pas été versionnée grâce à des outils comme Git, mais plusieurs versions correspondants à l'avancée du développement ont été faites. Je faisais régulièrement des bilans avec mon maître de stage pour validé l'avancer de l'application.</p>
+                <h4>Productions</h4>
+                <p class="prod"><ul>
+                    <li><a href="{{ asset('bundles/peshportfolio/etc/gestion SVG.4DB') }}">Application 4Dv14 gestion SVG</a></li>
+                    <li><a href="{{ asset('bundles/peshportfolio/etc/4d chart 2.4DB') }}">Application 4Dv13.5 4D Chart 2</a></li>
+                </ul></p>
+                <h4>Bilan</h4>
+                <p class="bilan">Ce premier stage fut une experience très intéressante qui m'a permis de découvrir le travail en entreprise, ses obligations et ses protocoles. De plus, il m'a offert l'opportunité que je cherchais de pouvoir travailler sur une technologie que je ne connaissais pas, et ainsi, de me permettre de diversifier mes expériences.</p>
+            </div>
+        </div>
+    </div>
+    <div class="block-2">
+        <div class="body">
+            <h1 class="title"><a name ="s2" href="#s2">Stage 2nd année</a></h1>
+            <div class="description">
+            	<img id="lpLogo" src="{{ asset('bundles/peshportfolio/images/lp-logo.png') }}" alt="Les Polypodes">
+                <p><a href="http://lespolypodes.com/">Les Polypodes</a>. Projet ODE (OpenData Events).</p><hr>
+                <h4>Contexte</h4>
+                <p class="context">L'association <a href="https://libertic.wordpress.com">LiberTIC</a> souhaite créer un agrégateur d'évênements pour la région Ouest, où des créateurs d'évênements (salle de concerts, salle d'expositions, théâtre) pourront publier leurs évênements rapidement et où des récepteurs (journaux, sites d'information) pourront les récupérer et les re-publier. Les Polypodes, société de développement Web, s'est proposée pour reprendre le projet qui avait échoué auparavant et mettre sa re-définition et sa conception en mission de stage.</p>
+                <h4>Objectifs</h4>
+                <p class="goal"><ul>
+                    <li>Autoformation d'une semaine sur le Framework PHP Symfony 2 et le versionning via Git grâce à la documentation en ligne.</li>
+                    <li>Définir le projet, quels outils utiliser pour le réaliser au mieux, tout en évitant de retomber dans les pièges qui ont fait échouer l'ancien projet.</li>
+                    <li>Développer une application prototype qui exploiterait cette solution, permettant de publier des calendriers d'évênements, et de les récupérer facilement et en tenant compte des contraintes du cahier des charges.</li>
+                </ul></p>
+                <h4>Méthode de travail</h4>
+                <p class="method">Ce stage a commencé par une semaine d’auto-formation au versionning avec Git et au PHP modèle MVC et Symfony.
+                Une fois ces bases acquises le travail consistait à définir les outils à utiliser pour répondre au besoin du cahier des charges. Notre choix s’est porté sur plusieurs solutions, mais nous avons décider de garder l’utilisation d’un server de calendrier (CalDav) et son exploitation grâce à un client Web.
+                Pour ce projet de stage j’ai travaillé en collaboration avec un deuxième stagiaire.Nous nous distribuons les rôles en fonction des compétences et des envies, et nous nous sommes souvent entre-aidés pour faire avancer le travail de chacun.
+                Chaque semaine, une rencontre avec les clients, l’association LiberTIC, nous permettait de rendre compte de notre travail, (test de la solution proposée) et de redéfinir leurs besoins.
+                Nous avions également tous les matins un quart d’heure de compte rendu avec les autres salariés de l’entreprise, où nous expliquions le travail fait la veille, les difficultés rencontrées, et les objectifs de la journée.</p>
+                <h4>Productions</h4>
+                <p class="prod"><ul>
+                    <li><a href="https://github.com/LiberTIC/ODEV2">Projet ODE</a></li>
+                    <li><a href="https://github.com/polypodes/CalDAVClientPrototype">CalDavClientPrototype</a></li>
+                </ul></p>
+                <h4>Bilan</h4>
+                <p class="bilan">Ce stage à couvert un grand nombre de situations d’entreprise que je souhaitais vivre : rencontre avec les clients, mêlée SCRUM, versionning et formation sur de nouvelles technologies. Il m’a offert ce que je venais chercher, un challenge et de nouvelles expériences, l’occasion pour moi de tester les connaissances acquises en formation sur un cas concret.</p>
+            </div>
+        </div>
+    </div>
+    <div class="block-1">
+        <div class="body">
+            <h1 class="title"><a name ="gsb" href="#gsb">PPE - GSB</a></h1>
+            <div class="description">
+                <img id="gsbLogo" src="{{ asset('bundles/peshportfolio/images/gsb-logo.png') }}" alt="Galaxy-Suiss Bourdin">
+                <p>Galaxy-Suiss Bourdin. Rapport des visites.</p><hr>
+                <h4>Contexte</h4>
+                <p class="context"><p>
+                    Le laboratoire pharmaceutique Galaxy Swiss Bourdin compte 480 visiteurs médicaux en France métropolitaine et 60 dans les départements et territoires d'outre-mer. Le laboratoire Galaxy Swiss Bourdin (GSB) est issu de la fusion entre le géant américain Galaxy (spécialisé dans le secteur des maladies virales dont le SIDA et les hépatites) et le laboratoire européen Swiss Bourdin (travaillant sur des médicaments plus conventionnels), lui même déjà union de trois autres laboratoires. Une conséquence de cette fusion, est la recherche d'une optimisation des activités de production et de distribution des médicaments.</p><p>
+                    Galaxy-Swiss-Bourdin souhaite mettre à jour ses outils informatiques et nous demande de respecter certaines contraintes et d’ajouter de nouvelles fonctionnalités. Nous devons fournir une application permettant le suivi des rapports de visites des visiteurs de la société détaillant les médecins visités, les médicaments concernés, le visiteur ayant fait la démarche, le tout en fournissant un outil de connexion et d’identification sécurisé.
+                </p>
+                </p>
+                <h4>Objectifs</h4>
+                <p class="goal"><ul>
+                    <li>Afficher la liste des comptes rendus de visites, celle des médecins, et celle des médicaments.</li>
+                    <li>Modifier les comptes rendus.</li>
+                    <li>Connexion sécurisé à l’application avec identification.</li>
+                </ul></p>
+                <h4>Méthode de travail</h4>
+                <p class="method">
+                    Nous avons réparti le développement entre les 4 membres de l’équipe, d’abords deux qu’entre nous définissaient le fonctionnement de l’application et mettaient en place des outils de gestion de projet et de versionning, et les deux autres modélisaient la base de données en analysant les besoins du cahier des charges. Le chef de groupe a utilisé Redmine pour distribuer les tâches et tenir compte du travail accompli, et l’application a été versionnée grâce à Git. Nous avons également effectué une ou deux mêlées SCRUM pour revoir ensemble les avancés et les problèmes rencontrés par chacun.
+                </p>
+                <h4>Productions</h4>
+                <p class="prod"><ul>
+                    <li><a href="#">Sources de l'application GSB_RapportsVisites</a></li>
+                    <li><a href="#">Documentation du projet</a></li>
+                </ul></p>
+                <h4>Bilan</h4>
+                <p class="bilan">
+                    Le travail de groupe nous a permis de travailler efficacement sur ce projet et nous a fait prendre conscience de l’intérêt de la gestion de projet. Malgré les quelques difficultés rencontrées avec le versionning de l’application, nous avons réussi à aboutir à une application fonctionnelle et à un résultat satisfaisant.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="block-2">
+        <div class="body">
+            <h1 class="title"><a name ="visadom" href="#visadom">PPE - Visadom</a></h1>
+            <div class="description">
+                <img id="visadomLogo"src="{{ asset('bundles/peshportfolio/images/visadom-logo.png') }}" alt="Visadom">
+                <p>Visadom. Gestion des clients.</p><hr>
+                <h4>Contexte</h4>
+                <p class="context">
+                    GalaxyWeb est une PME spécialisée dans le développement de sites web. Ses clients sont des artisans, des entrepreneurs individuels, des associations, des TPE et des PME du grand Ouest. Elle a réalisé le site web de l'auto-entrepreneur Pierre Lescault. Son activité consiste à visiter à domicile, des particuliers auxquels il propose du matériel quasi professionnel permettant la mise sous vide de produits alimentaires. Très satisfait du travail réalisé par GalaxyWeb, celui-ci demande par la suite le développement d’un outil qui lui permettrait rapidement de consulter la liste des clients qu’il doit visiter. Développer un prototype d’application mobile Android qui permettrait à Pierre Lescault de consulter rapidement la liste des clients qu’il doit visiter.
+                </p>
+                <h4>Objectifs</h4>
+                <p class="goal"><ul>
+                    <li>Visualiser par simple clic la liste des clients.</li>
+                    <li>Fonction de modification d'un enregistrement client.</li>
+                    <li>Fonction d'ajout d'un commentaire à l'issue d'une visite.</li>
+                </ul></p>
+                <h4>Méthode de travail</h4>
+                <p class="method">
+                    L'application a été développé pour Android 4.1 sous Eclipse et framework Android SDK. Le Smartphone utilisée pour le développement est un Android en version 4.2.12.
+                </p>
+                <h4>Productions</h4>
+                <p class="prod"><ul>
+                    <li>Application Java Visadom (indisponible)</li>
+                </ul></p>
+                <h4>Bilan</h4>
+                <p class="bilan">
+                    Ce PPE a été une occasion pour moi de m'essayer au Java et au développement Android en même temps. Même si le développement d'applications pour smartphone n'est pas un secteur d'activité qui m'intéresserait de poursuivre, ce fut une découverte assez valorisante.
+                </p>
+            </div>
+        </div>
+    </div> 
+{% endblock %}
