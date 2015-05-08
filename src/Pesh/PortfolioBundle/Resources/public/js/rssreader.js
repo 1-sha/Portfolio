@@ -50,9 +50,11 @@ function loadFeeds()
 			count++;
 
 			if (count == localFeeds.length){
+				document.getElementById('loading').style.display = "none";
+
 				sortByDate(false);
 				
-				for (var j = 0; j < items.length; j++){
+				for (var j = 0; j < 6; j++){
 					printItem(items[j]);
 				}
 			}
