@@ -50,12 +50,18 @@ function loadFeeds()
 			count++;
 
 			if (count == localFeeds.length){
-				document.getElementById('loading').style.display = "none";
+				if (items.length == 0){
+					document.getElementById('loading').innerHTML = "Unable to load feeds."
+				} else {
+					var nb = (items.length < 6) ? items.length : 6;
 
-				sortByDate(false);
-				
-				for (var j = 0; j < 6; j++){
-					printItem(items[j]);
+					document.getElementById('loading').style.display = "none";
+
+					sortByDate(false);
+					
+					for (var j = 0; j < nb; j++){
+						printItem(items[j]);
+					}
 				}
 			}
 		});
