@@ -1,0 +1,19 @@
+{# PortfolioBundle/Resources/views/divortfolio/cv.html.twig #}
+{% extends 'PeshPortfolioBundle:Portfolio:common/base.html.twig' %}
+
+
+{% block title %}
+	Compétences
+{% endblock %}
+
+
+{% block style %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('bundles/diveshportfolio/css/style-competences.css') }}" />
+{% endblock %}
+
+
+{% block body %}
+	L'ensemble de ces compétences ont été vues et acquises au cours des deux ans de formation, dans le cadre de TP, Projects Personnels Encadrés, et stages.
+{% endblock %}
