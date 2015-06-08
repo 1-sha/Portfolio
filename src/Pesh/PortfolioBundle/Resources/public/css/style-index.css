@@ -1,3 +1,8 @@
+strong {
+    color: #E66E00;
+    font-size: 18px;
+}
+
 .content .left-column {
     width: 70%;
 }
