@@ -84,8 +84,10 @@
 
 
 {% block script %}
+    <script type="text/javascript" src="{{ asset('bundles/peshportfolio/js/rssreader.js') }}"></script>
     <script type="text/javascript">
     var localrss = "{{ asset('bundles/peshportfolio/etc/rss.json') }}";
-    var ajaxproxy = "{{ path('pesh_portfolio_ajaxproxy') }}/";</script>
-    <script type="text/javascript" src="{{ asset('bundles/peshportfolio/js/rssreader.js') }}"></script>
+    var ajaxproxy = "{{ path('pesh_portfolio_ajaxproxy') }}/";
+    rssreader([], 6);
+    </script>
 {% endblock %}

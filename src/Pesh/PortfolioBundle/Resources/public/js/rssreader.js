@@ -1,9 +1,14 @@
 var localFeeds = [];
 var items = [];
 
-mergeLocalFeeds();
 
-function mergeLocalFeeds(tags)
+function rssreader(tags, n)
+{
+	mergeLocalFeeds(tags, n);
+}
+
+
+function mergeLocalFeeds(tags, n)
 {
 	$.ajax({
 		url : localrss,
@@ -27,13 +32,13 @@ function mergeLocalFeeds(tags)
 					}
 				});
 
-				loadFeeds();
+				loadFeeds(n);
 			}
 		}
 	});
 }
 
-function loadFeeds()
+function loadFeeds(n)
 {
 	var count = 0;
 	for (var i = 0; i < localFeeds.length; i++)
@@ -53,7 +58,7 @@ function loadFeeds()
 				if (items.length == 0){
 					document.getElementById('loading').innerHTML = "Unable to load feeds."
 				} else {
-					var nb = (items.length < 6) ? items.length : 6;
+					var nb = (items.length < n) ? items.length : n;
 
 					document.getElementById('loading').style.display = "none";
 
