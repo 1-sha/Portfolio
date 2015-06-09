@@ -2,6 +2,14 @@
     color: #E6E6E6;
 }
 
+.content a {
+    color: #E66E00;
+}
+
+.content a:hover {
+    color: #E6E6E6;
+}
+
 .note {
     background-color: #393939;
     text-align: center;
