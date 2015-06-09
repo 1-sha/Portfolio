@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comps>
+	<comp>
+		<title>Analyse du cahier des charges d'un service à produire</title>
+		<context>PPE GSB, TP Catoes, Stage 2nd année</context>
+		<description>Les spécificités et les attentes du projet étaient décrites dans un ensemble documentaire, définissant les besoins et les aboutissants du projet concerné.</description>
+	</comp>
+	<comp>
+		<title>Étude des exigences liées à la qualité attendue</title>
+		<context>Stage 2nd année</context>
+		<description>Nous avons redéfini le projet ODE, nous avons effectué des essais pour choisir les meilleurs outils à utiliser.</description>
+	</comp>
+	<comp>
+		<title>Détermination des tests nécessaires à la validation</title>
+		<context>PPE GSB</context>
+		<description>Nous avons listé les opérations à réaliser pour valider l'application.</description>
+	</comp>
+	<comp>
+		<title>Test d'intégration et d'acceptation d'un service</title>
+		<context>TP Catoes</context>
+		<description>L'application utilisait un serveur de base de données SQLServer et les procédures stockées côté serveur généraient des erreurs interprétables par l'application.</description>
+	</comp>
+	<comp>
+		<title>Participation à un projet</title>
+		<context>PPE GSB, Stage 2nd année</context>
+		<description>Le travail était effectué par groupe et géré par un chef de projet.</description>
+	</comp>
+	<comp>
+		<title>Évaluation et maintien de la qualité d'un service</title>
+		<context>Stage 2nd année</context>
+		<description>Régulièrement, nous avions une réunion avec les clients pour resituer les limites du projet et valider le travail accompli.</description>
+	</comp>
+	<comp>
+		<title>Identification, qualification et évaluation d'un problème</title>
+		<context>Stage 2nd année</context>
+		<description>Lors du choix des technologies à utiliser, nous avons été confrontés à de nombreux problèmes, de fonctionnalité ou de performances, et avons dû choisir la meilleure option.</description>
+	</comp>
+	<comp>
+		<title>Proposition d'amélioration d'un service</title>
+		<context>Stage 2nd année</context>
+		<description>Lors de soucis de performance, nos recherches nous ont amené à changer de technologie et à proposer des solutions pour rendre l'application plus fonctionnelle.</description>
+	</comp>
+	<comp>
+		<title>Installation et configuration d'éléments d'infrastructure</title>
+		<context>Stage 2nd année</context>
+		<description>Nous avons installé des serveurs sur des machines différentes et configuré les systèmes pour garantir le fonctionnement et la sécurité de l'application.</description>
+	</comp>
+	<comp>
+		<title>Remplacement ou mise à jour d'éléments défectueux</title>
+		<context>Stage 2nd année</context>
+		<description>Nous avons changé de serveur, l'un offrant plus de performance que le précédent.</description>
+	</comp>
+	<comp>
+		<title>Proposition d'une solution applicative</title>
+		<context>TP Catoes, Stage 1ère année, Stage 2nd année</context>
+		<description>L'application a été, avant son développement, réfléchie pour correspondre au mieux aux besoins.</description>
+	</comp>
+	<comp>
+		<title>Conception ou adaptation de l'interface utilisateur</title>
+		<context>PPE GSB, TP Catoes, Stage 1ère année, Stage 2nd année</context>
+		<description>L'application disposait d'au moins une interface faite pour permettre son contrôle par l'utilisateur.</description>
+	</comp>
+	<comp>
+		<title>Conception ou adaptation d'une base de données</title>
+		<context>PPE GSB, TP Catoes, Stage 1ère année, Stage 2nd année</context>
+		<description>Ces applications nécessitaient une base de données que nous avons conçue.</description>
+	</comp>
+	<comp>
+		<title>Définition des caractéristiques d'une solution applicative</title>
+		<context>Stage 1ère année, Stage 2nd année</context>
+		<description>Tous les aspects de l'application ont été réfléchis et leur définition rédigée dans une documentation technique.</description>
+	</comp>
+	<comp>
+		<title>Prototypage de composants logiciels</title>
+		<context>Stage 1ère année, Stage 2nd année</context>
+		<description>Le projet demandait la création d'éléments devant s'intégrer au sein d'une application déjà existante.</description>
+	</comp>
+	<comp>
+		<title>Gestion d'environnements de développement et de test</title>
+		<context>Stage 2nd année</context>
+		<description>L'environnement de développement utilisé nécéssitait une utilisation et un paramétrage particulier.</description>
+	</comp>
+	<comp>
+		<title>Développement, utilisation ou adaptation de composants</title>
+		<context>PPE GSB, Stage 1ère année, Stage 2nd année</context>
+		<description>L'application utilisait des fonctionnalités implémentées par un composant tiers que nous avons testé et choisi.</description>
+	</comp>
+	<comp>
+		<title>Réalisation des tests nécessaires à la validation</title>
+		<context>PPE GSB, Stage 2nd année</context>
+		<description>Le développement de l'application était accompagné de tests fonctionnels permettant de vérifier que les changements faits sur l'application n'impactaient pas d'autres fonctionnalités.</description>
+	</comp>
+	<comp>
+		<title>Rédaction d'une documentation technique</title>
+		<context>Stage 2nd année</context>
+		<description>Le projet disposait d'une documentation technique que nous avons complétée, et qui définissait les outils utilisés.</description>
+	</comp>
+	<comp>
+		<title>Analyse et correction d'un dysfonctionnement</title>
+		<context>Stage 2nd année</context>
+		<description>L'utilisation de composants non-fonctionnels nous a amené à faire des modifications sur ces composants.</description>
+	</comp>
+	<comp>
+		<title>Adaptation d'une solution applicative aux évolutions</title>
+		<context>Stage 1ère année</context>
+		<description>Le projet nécessitait le passage d'un composant obsolète vers une application fonctionnant sur la solution récente.</description>
+	</comp>
+	<comp>
+		<title>Mise à jour d'une documentation technique</title>
+		<context>Stage 2nd année</context>
+		<description>La documentation technique existante a été complétée par des explications sur les outils utilisés.</description>
+	</comp>
+	<comp>
+		<title>Mise en place d'une gestion de configuration</title>
+		<context>PPE GSB, TP OCS GLPI, Stage 2nd année</context>
+		<description>Le projet à été versionné et englobait des outils de gestion de ces versions et des configurations.</description>
+	</comp>
+	<comp>
+		<title>Recueil d'informations sur une configuration</title>
+		<context>TP OCS GLPI</context>
+		<description>L'utilisation des outils a été définie dans des consignes et des ressources en ligne.</description>
+	</comp>
+	<comp>
+		<title>Suivi d'une configuration et de ses éléments</title>
+		<context>TP OCS GLPI</context>
+		<description>l'application permettait la gestion d'un parc informatique comprenant plusieurs machines et permettant de les configurer depuis un serveur central.</description>
+	</comp>
+	<comp>
+		<title>Exploitation des référentiels, normes et standards</title>
+		<context>Stage 2nd année</context>
+		<description>Nous avons utilisé des RFCs, ainsi que des normes pour développer un service fonctionnant avec des applications tierces.</description>
+	</comp>
+	<comp>
+		<title>Veille technologique</title>
+		<context>Veille, Stage 2nd année</context>
+		<description>Nous avons suivie l'évolution des technologies utilisées pour être à jour.</description>
+	</comp>
+	<comp>
+		<title>Repérage des compléments de formation</title>
+		<context>PPE GSB, Stage 1ère année, Stage 2nd année</context>
+		<description>Le développement de l'application a été précédé d'une période d'auto-formation sur les technologies utilisées.</description>
+	</comp>
+	<comp>
+		<title>Étude d‘une technologie, d'un composant, d'un outil</title>
+		<context>PPE GSB, Stage 1ère année, Stage 2nd année</context>
+		<description>Les outils utilisés ont été choisis et sélectionnés pour répondre aux besoins techniques.</description>
+	</comp>
+</comps>

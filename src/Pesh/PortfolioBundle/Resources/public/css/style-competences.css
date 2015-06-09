@@ -1,0 +1,50 @@
+.content {
+    color: #E6E6E6;
+}
+
+.note {
+    background-color: #393939;
+    text-align: center;
+    font-family: Verdana;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.note strong {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.competences {
+    background-color: #393939;
+    text-align: justify;
+    font-family: Verdana;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.comp {
+    margin-top: 10px;
+
+}
+
+.comp p {
+
+}
+
+.comp .title {
+    color: #E66E00;
+    font-weight: bold;
+}
+
+.comp .context {
+    float: right;
+    margin-left: 40px;
+}
+
+.comp .description {
+
+}
