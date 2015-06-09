@@ -6,6 +6,28 @@
 	Veille
 {% endblock %}
 
+
+{% block style %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('bundles/peshportfolio/css/style-veille.css') }}" />
+{% endblock %}
+
+
 {% block body %}
-	<h1>veille</h1>
+	<div class="note">Pour ma veille technologique, j'utilise ensemble des méthodes de veille "pull" et "push". La méthode "push", c'est-à-dire que l'information m'est apportée automatiquement en fonction de critères que j'ai définis, utilise des flux RSS traitant de sujets qui m'intéressent auxquels je me suis abonné. J'ai développé moi même mon aggrégateur de flux qui me permet d'afficher ces informations directement sur mon site.</div>
+    <div class="note">Mon sujet de veille est : <strong>La cryptologie</strong>.</div>
+    <div class="rss" id="rss-viewer">
+        <div id="loading">loading feeds, please wait ...</div>
+    </div>
+{% endblock %}
+
+
+{% block script %}
+    <script type="text/javascript" src="{{ asset('bundles/peshportfolio/js/rssreader.js') }}"></script>
+    <script type="text/javascript">
+    var localrss = "{{ asset('bundles/peshportfolio/etc/rss.json') }}";
+    var ajaxproxy = "{{ path('pesh_portfolio_ajaxproxy') }}/";
+    rssreader(["crypto"], 100);
+    </script>
 {% endblock %}
