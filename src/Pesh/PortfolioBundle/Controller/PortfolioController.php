@@ -19,7 +19,11 @@ class PortfolioController extends Controller
 
     public function competencesAction()
     {
-        return $this->render('PeshPortfolioBundle:Portfolio:competences.html.twig', array());
+        $kernel = $this->get('kernel');
+        $path = $kernel->locateResource('@PeshPortfolioBundle/Resources/public/etc/comp.xml');
+        $comps = simplexml_load_file($path);
+        return $this->render('PeshPortfolioBundle:Portfolio:competences.html.twig', array(
+            'comps' => $comps));
     }
 
     public function veilleAction()

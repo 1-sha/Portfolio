@@ -10,10 +10,18 @@
 {% block style %}
     {{ parent() }}
 
-    <link rel="stylesheet" href="{{ asset('bundles/diveshportfolio/css/style-competences.css') }}" />
+    <link rel="stylesheet" href="{{ asset('bundles/peshportfolio/css/style-competences.css') }}" />
 {% endblock %}
 
 
 {% block body %}
 	<div class="note">→ L'ensemble de ces compétences ont été vues et acquises au cours des deux ans de formation, dans le cadre des <strong>TP</strong>, <strong>Projects Personnels Encadrés</strong>, et <strong>stages</strong>.</div>
+	<div class="note">→ Vous pouvez voir mon CV <a href="{{ asset('bundles/peshportfolio/etc/cv.pdf') }}">ici</a>.</div>
+	<div class="competences">
+	{% for comp in comps %}
+		<div class="comp">
+			<p><span class="title">{{ comp.title }}</span><span class="context">{{ comp.context }}</span></p><p class="description">{{ comp.description }}</p><hr>
+		</div>
+	{% endfor %}
+	</div>
 {% endblock %}
