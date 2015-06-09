@@ -7,5 +7,16 @@
 {% endblock %}
 
 {% block body %}
-	<h1>contact</h1>
+	{% for label, flashes in app.session.flashbag.all %}
+		{% for flash in flashes %}
+			<div class="alert alert-{{ label }}">
+				{{ flash }}
+			</div>
+		{% endfor %}
+	{% endfor %}
+
+	<form action="{{ path('pesh_portfolio_contact') }}" method="post">
+		{{ form_widget(form) }}
+		<button type="submit">Envoyer</button>
+	</form>
 {% endblock %}
