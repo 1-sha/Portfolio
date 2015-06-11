@@ -51,14 +51,15 @@ class PortfolioController extends Controller
                             array(
                                 'ip' => $request->getClientIp(),
                                 'nom' => $form->get('nom')->getData(),
-                                'message' => $form->get('message')->getData()
+                                'message' => $form->get('message')->getData(),
+                                'mail' => $form->get('email')->getData()
                             )
                         )
                     );
 
                 $this->get('mailer')->send($message);
 
-                $request->getSession()->getFlashBag()->add('success', 'Your email has been sent! Thanks!');
+                $request->getSession()->getFlashBag()->add('success', 'Votre message a été envoyé ! Merci !');
 
                 return $this->redirect($this->generateUrl('pesh_portfolio_contact'));
             }

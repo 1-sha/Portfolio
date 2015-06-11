@@ -6,10 +6,18 @@
 	Contact
 {% endblock %}
 
+
+{% block style %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('bundles/peshportfolio/css/style-contact.css') }}" />
+{% endblock %}
+
+
 {% block body %}
 	{% for label, flashes in app.session.flashbag.all %}
 		{% for flash in flashes %}
-			<div class="alert alert-{{ label }}">
+			<div class="note alert-{{ label }}">
 				{{ flash }}
 			</div>
 		{% endfor %}

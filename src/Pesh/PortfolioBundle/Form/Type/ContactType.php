@@ -23,19 +23,19 @@ class ContactType extends AbstractType
             ))
             ->add('email', 'email', array(
                 'attr' => array(
-                    'placeholder' => 'Votre Email.'
+                    'placeholder' => 'Votre Email'
                 )
             ))
             ->add('sujet', 'text', array(
                 'attr' => array(
-                    'placeholder' => 'Sujet du message.',
+                    'placeholder' => 'Sujet du message',
                     'pattern'     => '.{3,}'
                 )
             ))
             ->add('message', 'textarea', array(
                 'attr' => array(
-                    // 'cols' => 90,
-                    // 'rows' => 10,
+                    'cols' => 90,
+                    'rows' => 10,
                     'placeholder' => 'Votre message...'
                 )
             ));
